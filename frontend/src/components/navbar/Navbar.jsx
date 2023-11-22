@@ -1,34 +1,45 @@
 import React from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.png";
+import { Input } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+const onSearch = (value, _e, info) => console.log(info?.source, value);
 
+const { Search } = Input;
 const Navbar = () => {
   return (
+    
     <div className="navbar">
       <div className="navbar-links">
-        <div className="navbar-links_logo">
+        <a href="/" className="navbar-links_logo">
           <img src={logo} alt="logo" />
-        </div>
+        </a>
         <div className="navbar-links_container">
           <p>
-            <a href="#home">Trang chủ</a>
+            <a href="/">Trang chủ</a>
           </p>
           <p>
-            <a href="#course">Khóa học</a>
+            <a href="/course">Khóa học</a>
           </p>
           <p>
-            <a href="#exam">Đề thi</a>
+            <a href="/practice">Đề thi</a>
           </p>
           <p>
-            <a href="#blog">Tin tức</a>
+            <a href="/blog">Tin tức</a>
           </p>
         </div>
-      <div className="navbar-search">
-        <p>Tìm kiếm</p>
-      </div>
+      {/* <div className="navbar-search"> */}
+      <Search placeholder="Tìm đề thi" onSearch={onSearch} enterButton style={{
+        width: 720,
+        padding: 30
+      }}/>
+
+      {/* </div> */}
       </div>
       <div className="navbar-link_sign">
-        <button>Đăng nhập</button>
+      <UserOutlined style={{ color: '#fff' }} />
+        <div className="navbar-link_login"><button>Đăng nhập</button>
+        </div>
       </div>
     </div>
   );

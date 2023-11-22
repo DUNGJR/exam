@@ -1,16 +1,26 @@
-import React from "react"
-import {Navbar, Content, Footer} from "./components"
-import "./App.css"
-import "./index.css"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components";
+import "./App.css";
+import "./index.css";
+import { routes } from "./routes";
 
 const App = () => {
   return (
     <div className="App">
-
       <Navbar></Navbar>
-      <Content></Content> 
-      <Footer></Footer> 
+      <Router>
+        <Routes>
+          {routes.map((route) => {
+            const Page = route.page;
+            return (
+              <Route key={route.path} path={route.path} element={<Page />}></Route>
+            )})}
+
+        </Routes>
+      </Router>
     </div>
-    )
-}
-export default App
+  );
+};
+export default App;
+

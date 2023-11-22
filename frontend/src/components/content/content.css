@@ -5,6 +5,7 @@
 .course_list {
     /* margin: 20px; */
     width: 100%;
+    padding: 20px;
     display: inline-block;
     
 }
@@ -13,12 +14,20 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px #ccc;
     padding: 20px;
+    /* height: 100%; */
 }
 
+.card p{
+    margin-bottom: 5px;
+}
 
 .course_title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+}
+
+.course_button {
+    width: 100%;
 }
