@@ -43,7 +43,7 @@ return (
         </Form.Item>
 
         <Form.Item
-          name="password"
+          name="repassword"
           rules={[{ required: true, message: 'Please enter your password!' }]}
         >
           <Input.Password

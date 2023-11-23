@@ -7,12 +7,11 @@ import EditUserProfile from './components/EditUser/EditUser';
 import UserProfileView from './components/User/UserInfo';
 import LoginForm from './components/logRes/Login';
 import RegisterForm from './components/logRes/Res';
-
+import Blogwebsite from './components/blog/blog';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginForm/>
-  <RegisterForm/>
+    <Blogwebsite/>
   </React.StrictMode>
 );
 
