@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import EditUserProfile from './components/EditUser/EditUser';
+import UserProfileView from './components/User/UserInfo';
+import LoginForm from './components/logRes/Login';
+import RegisterForm from './components/logRes/Res';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <LoginForm/>
+  <RegisterForm/>
   </React.StrictMode>
 );
 
