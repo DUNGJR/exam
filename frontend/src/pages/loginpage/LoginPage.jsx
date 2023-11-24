@@ -1,9 +1,9 @@
 import React from 'react';
 import { Form, Button, Checkbox, Card, Input, Tooltip, Space, Radio } from 'antd';
 import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined  } from '@ant-design/icons';
-import './Login.css'
+import './loginpage.css'
 
-const LoginForm = () => {
+const LoginPage = () => {
        
 const [passwordVisible, setPasswordVisible] = React.useState(false);
 
@@ -48,7 +48,7 @@ return (
         </Form.Item>
 
         <Form.Item>
-          <div className='footer'>
+          <div className='footer_card'>
           <a href="/forgot-password" sty>Quên mật khẩu?</a>
             <a type="link" href="/register">
               Đăng ký tài khoản mới
@@ -64,4 +64,4 @@ return (
 );
 };
 
-export default LoginForm;
+export default LoginPage;

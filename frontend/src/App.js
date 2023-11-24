@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components";
 import "./App.css";
 import "./index.css";
 import { routes } from "./routes";
+import { getPosts } from "./actions/posts.js";
+
+import { useDispatch } from "react-redux";
+
 
 const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getPosts());
+  },[dispatch]);
+
   return (
     <div className="App">
       <Navbar></Navbar>

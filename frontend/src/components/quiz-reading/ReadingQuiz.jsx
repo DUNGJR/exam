@@ -75,7 +75,12 @@ const Quiz = () => {
           
         </div>
         <div className="quiz_right">
-          <p className="quiz_right_title">BẢNG CÂU HỎI</p>
+          <p>Thời gian còn lại</p>
+          <span>00:00</span>
+          <Button className="nopbai_btn" type="primary" block>
+      NỘP BÀI
+    </Button> 
+             <p className="quiz_right_title">BẢNG CÂU HỎI</p>
           <Button className="question_btn" shape="circle">
                 1
               </Button>

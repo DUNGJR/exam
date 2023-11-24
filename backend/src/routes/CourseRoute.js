@@ -1,7 +1,7 @@
 import express from 'express';
-import { Course } from '../models/courseModel.js';
-
 const router = express.Router();
+import { Course } from '../models/CourseModel.js';
+
 
 // Route for Save a new Course
 router.post('/', async (request, response) => {

@@ -20,7 +20,7 @@
     border-radius: 50px;
   }
   
-  .footer{
+  .footer_card{
     display: flex;
     justify-content: space-between;
   }

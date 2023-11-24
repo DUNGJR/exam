@@ -19,8 +19,3 @@
   .ant-input-affix-wrapper .ant-input {
     border-radius: 50px;
   }
-  
-  .footer{
-    display: flex;
-    justify-content: space-between;
-  }

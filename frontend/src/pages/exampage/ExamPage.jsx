@@ -1,6 +1,6 @@
 import { Quiz } from "../../components"
 
-const HomePage = () => {
+const ExamPage = () => {
   return (
     <div>
  
@@ -9,4 +9,4 @@ const HomePage = () => {
     </div>
   )
 }
-export default HomePage
+export default ExamPage

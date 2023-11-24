@@ -9,6 +9,7 @@ const Content = () => {
       <div class="grid">
         <h1 className="course_title">DANH SÁCH ĐỀ THI</h1>
         <div class="grid__row">
+
           <div className="course_list col-md-3">
             <div className="card">
               <p className="course_name">ETS 2023 Test 1</p>
@@ -17,7 +18,35 @@ const Content = () => {
                 <ClockCircleOutlined style={{}} /> 120 phút
               </p>
               <p className="course_detail">7 phần, 200 câu hỏi</p>
-              <a href="/exam" className="course_button">
+              <a href="/exam-reading" className="course_button">
+                <Button className="course_button">Vào phòng thi</Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="course_list col-md-3">
+            <div className="card">
+              <p className="course_name">ETS 2023 Test 1</p>
+              <p className="course_topic">TOEIC</p>
+              <p className="course_time">
+                <ClockCircleOutlined style={{}} /> 120 phút
+              </p>
+              <p className="course_detail">7 phần, 200 câu hỏi</p>
+              <a href="/exam-reading" className="course_button">
+                <Button className="course_button">Vào phòng thi</Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="course_list col-md-3">
+            <div className="card">
+              <p className="course_name">ETS 2023 Test 1</p>
+              <p className="course_topic">TOEIC</p>
+              <p className="course_time">
+                <ClockCircleOutlined style={{}} /> 120 phút
+              </p>
+              <p className="course_detail">7 phần, 200 câu hỏi</p>
+              <a href="/exam-reading" className="course_button">
                 <Button className="course_button">Vào phòng thi</Button>
               </a>
             </div>
@@ -25,49 +54,37 @@ const Content = () => {
 
           <div className="course_list col-md-3">
         <div className="card">
-          <p className="course_name">ETS 2023 Test 1</p>
+          <p className="course_name">Đề Listening Part 1</p>
           <p className="course_topic">TOEIC</p>
           <p className="course_time">
-          <ClockCircleOutlined style={{}} /> 120 phút
+          <ClockCircleOutlined style={{}} /> 6 phút
           </p>
-          <p className="course_detail">7 phần, 200 câu hỏi</p>
-          <a href="/exam" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
+          <p className="course_detail">1 phần, 6 câu hỏi</p>
+          <a href="/exam-listen" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
         </div>
       </div>
 
       <div className="course_list col-md-3">
         <div className="card">
-          <p className="course_name">ETS 2023 Test 1</p>
+          <p className="course_name">Đề Listening Part 1</p>
           <p className="course_topic">TOEIC</p>
           <p className="course_time">
-          <ClockCircleOutlined style={{}} /> 120 phút
+          <ClockCircleOutlined style={{}} /> 6 phút
           </p>
-          <p className="course_detail">7 phần, 200 câu hỏi</p>
-          <a href="/exam" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
+          <p className="course_detail">1 phần, 6 câu hỏi</p>
+          <a href="/exam-listen" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
         </div>
       </div>
 
       <div className="course_list col-md-3">
         <div className="card">
-          <p className="course_name">ETS 2023 Test 1</p>
+          <p className="course_name">Đề Listening Part 1</p>
           <p className="course_topic">TOEIC</p>
           <p className="course_time">
-          <ClockCircleOutlined style={{}} /> 120 phút
+          <ClockCircleOutlined style={{}} /> 6 phút
           </p>
-          <p className="course_detail">7 phần, 200 câu hỏi</p>
-          <a href="/exam" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
-        </div>
-      </div>
-
-      <div className="course_list col-md-3">
-        <div className="card">
-          <p className="course_name">ETS 2023 Test 1</p>
-          <p className="course_topic">TOEIC</p>
-          <p className="course_time">
-          <ClockCircleOutlined style={{}} /> 120 phút
-          </p>
-          <p className="course_detail">7 phần, 200 câu hỏi</p>
-          <a href="/exam" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
+          <p className="course_detail">1 phần, 6 câu hỏi</p>
+          <a href="/exam-listen" className="course_button"><Button className="course_button">Vào phòng thi</Button></a>
         </div>
       </div>
 

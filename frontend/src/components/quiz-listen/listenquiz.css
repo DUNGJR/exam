@@ -43,3 +43,33 @@
     margin: 6px;
     
 }
+
+/* .quiz_left_content .listen {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .play_btn {
+    margin-right: 10px; 
+  }
+  
+  .slider {
+    width: 50%;
+  }
+   */
+
+.listen {
+    display: flex;
+}
+
+.slider {
+    width: 80%;
+}
+
+.play_btn:hover {
+    background-color: #555;
+}
+
+.nopbai_btn {
+    margin: 10px 0;
+}

@@ -37,9 +37,11 @@ const Navbar = () => {
       {/* </div> */}
       </div>
       <div className="navbar-link_sign">
+        <a href="/user">
       <UserOutlined style={{ color: '#fff' }} />
-        <div className="navbar-link_login"><button>Đăng nhập</button>
-        </div>
+      </a>
+        <a href="/login" className="navbar-link_login"><button>Đăng nhập</button>
+        </a>
       </div>
     </div>
   );

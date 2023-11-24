@@ -3,7 +3,7 @@ import { Layout, Card, Typography, Form, Input, DatePicker, Radio, Button, Calen
 import { UploadOutlined } from '@ant-design/icons';
 
 import './EditUser.css'
-import '../User/UserInfo.css'
+import '../user/UserInfo.css'
 
 const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;

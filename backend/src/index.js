@@ -1,12 +1,16 @@
 import express from 'express';
 import { PORT, mongoDBURL } from './config.js';
 import mongoose from 'mongoose';
-import courseRoute from './routes/courseRoute.js';
+import CourseRoute from './routes/CourseRoute.js';
+import UserRouter from './routes/UserRouter.js';
 import cors from 'cors';
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv'
 
 const app = express();
+  
+app.use(bodyParser.json());
 
-// Middleware for parsing request body
 app.use(express.json());
 
 app.use(cors());
@@ -16,7 +20,8 @@ app.get('/', (request, response) => {
   return response.status(234).send('Nhom5');
 });
 
-app.use('/course', courseRoute);
+app.use('/course', CourseRoute);
+app.use('/user', UserRouter);
 
 // Connect to database
 mongoose

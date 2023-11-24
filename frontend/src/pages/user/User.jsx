@@ -58,7 +58,7 @@ function UserProfileView() {
             <Paragraph className="paragraph"><MehOutlined /> Gender: {userData.gender}</Paragraph>
             <Paragraph className="paragraph"><InfoCircleOutlined />  Bio: {userData.bio}</Paragraph>
             <div className='editBtn'>
-            <Button type="primary">
+            <Button href="/edituser" type="primary">
                 Edit Profile
             </Button>
             </div>
