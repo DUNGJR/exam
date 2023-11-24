@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Button, Checkbox, Card, Input, Tooltip, Space, Radio } from 'antd';
-import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined  } from '@ant-design/icons';
+import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined, GoogleOutlined } from '@ant-design/icons';
 import './loginpage.css'
 
 const LoginPage = () => {
@@ -17,16 +17,17 @@ return (
       <Space direction="vertical" style={{ width: '100%' }}>
         <Form.Item
           name="username"
-          rules={[{ required: true, message: 'Please input your username!' }]}
+          rules={[{ required: true, message: 'Please input your email!' }]}
         >
           <Input
-            placeholder="Enter your username"
-            prefix={<UserOutlined className="site-form-item-icon" />}
+            placeholder="Enter your email"
+            prefix={<GoogleOutlined className="site-form-item-icon" />}
             suffix={
               <Tooltip title="Extra information">
                 <InfoCircleOutlined style={{ color: 'rgba(0,0,0,.45)' }}/>
               </Tooltip>
             }
+            type='email'
           />
         </Form.Item>
 
@@ -49,14 +50,11 @@ return (
 
         <Form.Item>
           <div className='footer_card'>
-          <a href="/forgot-password" sty>Quên mật khẩu?</a>
+          <a href="/forgot-password" sty>Fogot Your Password?</a>
             <a type="link" href="/register">
-              Đăng ký tài khoản mới
+              Signup Now
             </a>
           </div>
-          <Space>
-            
-          </Space>
         </Form.Item>
       </Space>
     </Form>
