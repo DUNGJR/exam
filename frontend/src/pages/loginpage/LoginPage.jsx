@@ -1,8 +1,8 @@
 import React from 'react';
 import { Form, Button, Checkbox, Card, Input, Tooltip, Space, Radio } from 'antd';
-import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined, GoogleOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined, GoogleOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
 import './loginpage.css'
-
+import { GoogleLogin } from 'react-google-login'
 const LoginPage = () => {
        
 const [passwordVisible, setPasswordVisible] = React.useState(false);
@@ -47,6 +47,12 @@ return (
             Đăng nhập
           </Button>
         </Form.Item>
+
+        <Space align="center" style={{ justifyContent: 'center', width: '100%', paddingTop: '20px' }}>
+          <Button icon={<GoogleOutlined />} shape="circle" />
+          <Button icon={<FacebookOutlined />} shape="circle" />
+          <Button icon={<TwitterOutlined />} shape="circle" />
+        </Space>
 
         <Form.Item>
           <div className='footer_card'>

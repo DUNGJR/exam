@@ -60,8 +60,8 @@ return (
         </Form.Item>
 
         <Form.Item
-          name="password"
-          rules={[{ required: true, message: 'Please enter your password!' }]}
+          name="repassword"
+          rules={[{ required: true, message: 'Please enter your re-password!' }]}
         >
           <Input.Password
             prefix={<LockOutlined />}
