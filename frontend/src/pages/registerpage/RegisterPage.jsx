@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Button, Checkbox, Card, Input, Tooltip, Space, Radio } from 'antd';
-import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined,  GoogleOutlined, FacebookOutlined, TwitterOutlined } from '@ant-design/icons';
+import { UserOutlined, LockOutlined,InfoCircleOutlined, EyeTwoTone, EyeInvisibleOutlined,  GoogleOutlined, FacebookOutlined, TwitterOutlined,  } from '@ant-design/icons';
 import './Res.css'
 
 
@@ -32,6 +32,23 @@ return (
         </Form.Item>
 
         <Form.Item
+          name="email"
+          rules={[{ required: true, message: 'Please input your email!' }]}
+        >
+          <Input
+            placeholder="Enter your email"
+            prefix={<GoogleOutlined className="site-form-item-icon" />}
+            suffix={
+              <Tooltip title="Extra information">
+                <InfoCircleOutlined style={{ color: 'rgba(0,0,0,.45)' }}/>
+              </Tooltip>
+            }
+            type='email'
+          />
+        </Form.Item>
+        
+
+        <Form.Item
           name="password"
           rules={[{ required: true, message: 'Please enter your password!' }]}
         >
@@ -43,8 +60,8 @@ return (
         </Form.Item>
 
         <Form.Item
-          name="password"
-          rules={[{ required: true, message: 'Please enter your password!' }]}
+          name="repassword"
+          rules={[{ required: true, message: 'Please enter your re-password!' }]}
         >
           <Input.Password
             prefix={<LockOutlined />}
@@ -67,6 +84,14 @@ return (
           <Button icon={<TwitterOutlined />} shape="circle" />
         </Space>
     </Form>
+
+    <Form.Item>
+          <div className='footer_card' style={{ display: 'flex', alignItems: 'center', justifyContent:'center'}}>
+            <a type="link" href="/login">
+              Already have an account ? Signin Now
+            </a>
+          </div>
+        </Form.Item>
   </Card>
 );
 };
