@@ -14,18 +14,14 @@ const courseSchema = mongoose.Schema(
         type: Number,
         required: true,
     },
-    detail: {
-        type: String,
+    part: {
+        type: Number,
       required: true,
     },
-    createDay: {
-      type: String,
-      required: true,
-    },
-    finishDay: {
-      type: String,
-      required: true,
-    },
+    question: {
+      type: Number,
+    required: true,
+  },
   },
   {
     timestamps: true,

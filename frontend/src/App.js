@@ -1,29 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components";
 import "./App.css";
 import "./index.css";
 import { routes } from "./routes";
-import { getPosts } from "./actions/posts.js";
+import { getCourse } from "./actions/posts.js";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const App = () => {
+  // const courses = useSelector((state) => state.posts);
+  // console.log(course);
+  const [currentId, setCurrentId] = useState(null);
   const dispatch = useDispatch();
+
   useEffect(() => {
-    dispatch(getPosts());
-  },[dispatch]);
+    dispatch(getCourse());
+  },[currentId,dispatch]);
 
   return (
     <div className="App">
       <Navbar></Navbar>
       <Router>
         <Routes>
+        
           {routes.map((route) => {
             const Page = route.page;
             return (
-              <Route key={route.path} path={route.path} element={<Page />}></Route>
+              <Route key={route.path} path={route.path} element={<Page   currentId={currentId} setCurrentId={setCurrentId}  />}></Route>
             )})}
 
         </Routes>
